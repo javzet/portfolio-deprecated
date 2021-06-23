@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector(".navbar-btn"),t=document.querySelector(".navbar");e.addEventListener("click",(function(){t.classList.toggle("show")}))})();

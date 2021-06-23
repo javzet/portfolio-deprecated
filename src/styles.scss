@@ -1,0 +1,58 @@
+@use "./styles/variables" as var;
+
+:root {
+  --navbar-height: 60px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var.$semi-black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var.$semi-white;
+  border-radius: 1rem;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.no-bold {
+  font-weight: normal;
+}
+
+.semi-bold {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-container {
+  height: calc(100% - #{var.$nav-height});
+  margin: 0px auto;
+  position: relative;
+  top: var.$nav-height;
+}
+
+section {
+  min-height: 100vh;
+}
+
+@import "./styles/header";
+@import "./styles/navbar";
+@import "./styles/banner";
+@import "./styles/work";
+@import "./styles/footer";

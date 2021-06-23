@@ -1,0 +1,15 @@
+@use "./variables" as var;
+
+section.work {
+  height: 100vh;
+  background-color: var.$white;
+}
+
+.work-container {
+  width: 80%;
+  padding: 2rem 0rem;
+}
+
+.section-title {
+  font-size: 2.6rem;
+}

@@ -1,0 +1,27 @@
+@use "variables" as var;
+
+.header {
+  $decoration-color: var.$semi-black;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var.$nav-height;
+  padding: 0px 0.6rem;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 1px 1px 15px 1px rgba($color: $decoration-color, $alpha: 0.25);
+  border-bottom: 1px rgba($color: $decoration-color, $alpha: 0.15) solid;
+  backdrop-filter: blur(5px);
+  transition: background ease 0.3s;
+}
+
+.header.scroll {
+  background: var.$black;
+}
+
+.header.static {
+  background: transparent;
+}
